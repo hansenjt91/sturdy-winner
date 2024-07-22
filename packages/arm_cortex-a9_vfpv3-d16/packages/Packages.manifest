@@ -1,0 +1,35 @@
+Package: liblzma
+Version: 5.4.6-1
+Depends: libc, libpthread
+Source: feeds/packages/utils/xz
+SourceName: liblzma
+License: Public-Domain LGPL-2.1-or-later GPL-2.0-or-later GPL-3.0-or-later
+LicenseFiles: COPYING
+Section: libs
+SourceDateEpoch: 1721479940
+CPE-ID: cpe:/a:tukaani:xz
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 59064
+Filename: liblzma_5.4.6-1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 59885
+SHA256sum: 387fb57a5e4ccfb313cfbb98cab4322e69941771573167fae5a5851bded5f071
+Description:  liblzma library from XZ Utils
+
+Package: libpam
+Version: 1.5.2-1
+Depends: libc
+Source: feeds/packages/libs/libpam
+SourceName: libpam
+License: BSD-3c GPL
+LicenseFiles: COPYING Copyright
+Section: libs
+SourceDateEpoch: 1721479940
+CPE-ID: cpe:/a:linux-pam:linux-pam
+Maintainer: Nikos Mavrogiannopoulos <n.mavrogiannopoulos@gmail.com>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 174903
+Filename: libpam_1.5.2-1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 174961
+SHA256sum: 687e116f364bbabc65a605479ca9c00afd52f9d6b506f4562a36c7142dbdfcb5
+Description:  The Linux-PAM Pluggable Authentication Modules.
+
