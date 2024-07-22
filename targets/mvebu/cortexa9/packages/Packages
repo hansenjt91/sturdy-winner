@@ -174,21 +174,6 @@ Description:  Extra ip6tables nftables nft binaries.
  ip6tables-translate
  ip6tables-restore-translate
 
-Package: ip6tables-zz-legacy
-Version: 1.8.8-2
-Depends: libc, kmod-ip6tables, xtables-legacy
-Provides: ip6tables, ip6tables-legacy
-Alternatives: 200:/usr/sbin/ip6tables:/usr/sbin/xtables-legacy-multi, 200:/usr/sbin/ip6tables-restore:/usr/sbin/xtables-legacy-multi, 200:/usr/sbin/ip6tables-save:/usr/sbin/xtables-legacy-multi
-License: GPL-2.0
-Section: net
-CPE-ID: cpe:/a:netfilter:iptables
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 213
-Filename: ip6tables-zz-legacy_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
-Size: 1033
-SHA256sum: a606a7fa8eb6919f0ad2464cefc456302dfe77b655ea0ebec4a77bbebed86e5a
-Description:  IPv6 firewall administration tool
-
 Package: iptables-mod-checksum
 Version: 1.8.8-2
 Depends: libc, libxtables12, kmod-ipt-checksum
@@ -615,57 +600,6 @@ Description:  Extra iptables nftables nft binaries.
  iptables-nft-save
  iptables-translate
  iptables-restore-translate
-
-Package: iptables-zz-legacy
-Version: 1.8.8-2
-Depends: libc, xtables-legacy
-Provides: iptables, iptables-legacy
-Alternatives: 200:/usr/sbin/iptables:/usr/sbin/xtables-legacy-multi, 200:/usr/sbin/iptables-restore:/usr/sbin/xtables-legacy-multi, 200:/usr/sbin/iptables-save:/usr/sbin/xtables-legacy-multi
-License: GPL-2.0
-Section: net
-CPE-ID: cpe:/a:netfilter:iptables
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 243
-Filename: iptables-zz-legacy_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
-Size: 1220
-SHA256sum: 27b6814349034785a3de4260296941181c772f1e525bbc4168845e9e7b2a5a5d
-Description:  IP firewall administration tool.
- 
- Matches:
- - icmp
- - tcp
- - udp
- - comment
- - conntrack
- - limit
- - mac
- - mark
- - multiport
- - set
- - state
- - time
- 
- Targets:
- - ACCEPT
- - CT
- - DNAT
- - DROP
- - REJECT
- - FLOWOFFLOAD
- - LOG
- - MARK
- - MASQUERADE
- - REDIRECT
- - SET
- - SNAT
- - TCPMSS
- 
- Tables:
- - filter
- - mangle
- - nat
- - raw
- 
 
 Package: kmod-3c59x
 Version: 5.15.162-1
@@ -12692,19 +12626,6 @@ Filename: xdpdump_1.2.9-1_arm_cortex-a9_vfpv3-d16.ipk
 Size: 42916
 SHA256sum: 68ab5d82602d354a7ec6b49de85f8a86d31bb78f01565c2dc0ff844bde3c47c9
 Description:  xdpdump - a simple tcpdump like tool for capturing packets at the XDP layer
-
-Package: xtables-legacy
-Version: 1.8.8-2
-Depends: libc, kmod-ipt-core, libip4tc2, libip6tc2, libiptext0, libiptext6-0, libxtables12
-License: GPL-2.0
-Section: net
-CPE-ID: cpe:/a:netfilter:iptables
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 23832
-Filename: xtables-legacy_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
-Size: 24559
-SHA256sum: d00df69ec7bdded03f821adb899633ade7a5f0b62841e8f83eee1a3480f0940c
-Description:  IP firewall administration tool
 
 Package: xtables-nft
 Version: 1.8.8-2
