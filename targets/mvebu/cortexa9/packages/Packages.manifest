@@ -16264,26 +16264,6 @@ Size: 129644
 SHA256sum: 1588670204f0d72d347295ab2d8c9674d4c0b327ffcc9da5b44031b0ca79af9a
 Description:  libctf
 
-Package: libdw1
-Version: 0.189-1
-Depends: libc, libelf1, libbz2-1.0
-Provides: libdw
-Source: package/libs/elfutils
-SourceName: libdw
-License: GPL-3.0-or-later
-LicenseFiles: COPYING COPYING-GPLV2 COPYING-LGPLV3
-Section: libs
-SourceDateEpoch: 1679419702
-ABIVersion: 1
-CPE-ID: cpe:/a:elfutils_project:elfutils
-Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 184720
-Filename: libdw1_0.189-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 183954
-SHA256sum: ec2dc516d7015e49c93d9c7d95c2e33d7dcd1bc50bafeb74448657cac98587b3
-Description:  ELF manipulation libraries (libdw)
-
 Package: libgcc1
 Version: 12.3.0-4
 Provides: libgcc
