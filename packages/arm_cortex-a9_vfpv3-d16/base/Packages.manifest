@@ -220,6 +220,77 @@ Size: 17009
 SHA256sum: 3ae5be04f57bf786a15878d467f021f34e5b28038b6f338b3b36e52501538a9b
 Description:  hostapd/wpa_supplicant common support files
 
+Package: ip-bridge
+Version: 6.3.0-1
+Depends: libc, libnl-tiny1
+Source: package/network/utils/iproute2
+SourceName: ip-bridge
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1683462718
+CPE-ID: cpe:/a:iproute2_project:iproute2
+Maintainer: Russell Senior <russell@personaltelco.net>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 33836
+Filename: ip-bridge_6.3.0-1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 34600
+SHA256sum: 684da97ff66af303690f6acfe502b5415637ad9abb6dbbb3fdecfe0122be2f37
+Description:  Bridge configuration utility from iproute2
+
+Package: ip-full
+Version: 6.3.0-1
+Depends: libc, libnl-tiny1, libbpf1
+Provides: ip
+Alternatives: 300:/sbin/ip:/usr/libexec/ip-full
+Source: package/network/utils/iproute2
+SourceName: ip-full
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1683462718
+CPE-ID: cpe:/a:iproute2_project:iproute2
+Maintainer: Russell Senior <russell@personaltelco.net>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 219574
+Filename: ip-full_6.3.0-1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 220190
+SHA256sum: 73b61d6914c5ca7b276399d373cbd95eb192044467f14be7c5b32caa11c94534
+Description:  Routing control utility (full)
+
+Package: ipset
+Version: 7.17-1
+Depends: libc, kmod-ipt-ipset, libmnl0, libipset13
+Source: package/network/utils/ipset
+SourceName: ipset
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1695847021
+CPE-ID: cpe:/a:netfilter:ipset
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 1290
+Filename: ipset_7.17-1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 2086
+SHA256sum: 8aae42ac58e78999c6415073dc3107715aa5fe60d8bed2fd4b539af862abdcff
+Description:  IPset administration utility
+
+Package: iw-full
+Version: 5.19-1
+Depends: libc, libnl-tiny1
+Provides: iw
+Source: package/network/utils/iw
+SourceName: iw-full
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1720369837
+CPE-ID: cpe:/a:kernel:iw
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 83071
+Filename: iw-full_5.19-1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 83925
+SHA256sum: b13e955a8e6dd0584e7ae746cef65effc70584ef563627fb7c6ede551b6e188f
+Description:  cfg80211 interface configuration utility (full version)
+
 Package: iw
 Version: 5.19-1
 Depends: libc, libnl-tiny1
@@ -336,6 +407,45 @@ Size: 4401
 SHA256sum: 8fd4b203a95cfc94d126d79757febcd838e543881e780287b710ac1e256538cd
 Description:  blobmsg <-> json conversion library
 
+Package: libbpf1
+Version: 1.2.2-1
+Depends: libc, libelf1
+Provides: libbpf
+Source: package/libs/libbpf
+SourceName: libbpf
+License: LGPL-2.1 OR BSD-2-Clause
+Section: libs
+SourceDateEpoch: 1695847021
+ABIVersion: 1
+CPE-ID: cpe:/a:libbpf_project:libbpf
+Maintainer: Tony Ambardar <itugrok@yahoo.com>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 128560
+Filename: libbpf1_1.2.2-1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 129056
+SHA256sum: 4e68baa482573c05a1e2f745255643733d10cb56c6266b16cb89a65cf4369bb6
+Description:  libbpf is a library for loading eBPF programs and reading and manipulating eBPF objects from user-space.
+
+Package: libelf1
+Version: 0.189-1
+Depends: libc, zlib
+Provides: libelf, libelf11
+Source: package/libs/elfutils
+SourceName: libelf
+License: GPL-3.0-or-later
+LicenseFiles: COPYING COPYING-GPLV2 COPYING-LGPLV3
+Section: libs
+SourceDateEpoch: 1679419702
+ABIVersion: 1
+CPE-ID: cpe:/a:elfutils_project:elfutils
+Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 38709
+Filename: libelf1_0.189-1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 39589
+SHA256sum: b1a68959e39252b42f480ea9ec3d12725ec11a455168c9b6915c42cbb2bd17a2
+Description:  ELF manipulation libraries (libelf)
+
 Package: libgmp10
 Version: 6.2.1-1
 Depends: libc
@@ -354,6 +464,25 @@ Size: 188229
 SHA256sum: de11b27ff07d9e5030b6388b023206b0abb1f5a5f60d3be0d916e488cca30dd2
 Description:  GMP is a free library for arbitrary precision arithmetic, operating on
  signed integers, rational numbers, and floating point numbers.
+
+Package: libipset13
+Version: 7.17-1
+Depends: libc, kmod-ipt-ipset, libmnl0
+Provides: libipset
+Source: package/network/utils/ipset
+SourceName: libipset
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1695847021
+ABIVersion: 13
+CPE-ID: cpe:/a:netfilter:ipset
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 44325
+Filename: libipset13_7.17-1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 44717
+SHA256sum: 491a113b38266d4f15ff31c616b714b70018fd2f88c1a16744c79a3353ac2e6e
+Description:  IPset administration utility
 
 Package: libiwinfo-data
 Version: 2023-07-01-ca79f641-1
@@ -1185,6 +1314,42 @@ Size: 61197
 SHA256sum: 5b383f95b54fd02e71b0ffc57269b3b5f344c5c2e8e8fcb365815f79637f4fb6
 Description:  Basic SELinux Security Policy designed specifically for
  OpenWrt and written in Common Intermediate Language.
+
+Package: tc-full
+Version: 6.3.0-1
+Depends: libc, kmod-sched-core, libbpf1, libxtables12, tc-mod-iptables
+Provides: tc
+Alternatives: 400:/sbin/tc:/usr/libexec/tc-full
+Source: package/network/utils/iproute2
+SourceName: tc-full
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1683462718
+CPE-ID: cpe:/a:iproute2_project:iproute2
+Maintainer: Russell Senior <russell@personaltelco.net>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 169973
+Filename: tc-full_6.3.0-1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 170645
+SHA256sum: ff0fa6c895526d1acbd54860f8796ac38778c2beb6a82201ae13147cff7b0111
+Description:  Traffic control utility (full)
+
+Package: tc-mod-iptables
+Version: 6.3.0-1
+Depends: libc, libxtables12, libbpf1
+Source: package/network/utils/iproute2
+SourceName: tc-mod-iptables
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1683462718
+CPE-ID: cpe:/a:iproute2_project:iproute2
+Maintainer: Russell Senior <russell@personaltelco.net>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 3261
+Filename: tc-mod-iptables_6.3.0-1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 4033
+SHA256sum: 366c37cb1ab6e1cf3bebd9da5ac0b871ca9f06260ca34079daafd63183865814
+Description:  Traffic control module - iptables action
 
 Package: ubox
 Version: 2022-08-13-4c7b720b-2
